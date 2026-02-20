@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Barkod" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ürün Adı" />
+
+    <EditText
+        android:id="@+id/etQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Stok"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fiyat"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kaydet" />
+
+</LinearLayout>
